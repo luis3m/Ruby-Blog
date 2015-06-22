@@ -1,0 +1,23 @@
+<div ng-show="posts" ng-repeat="post in ::posts">
+	<div class="post-preview">
+		<a href="/posts/{{::post.id}}">
+			<h2 class="post-title" ng-bind="::post.title"></h2>
+            <h3 ng-hide="isSinglePost" class="post-description" ng-bind="::post.description | limitWordsTo: 10"></h3>
+			<h3 ng-show="isSinglePost" class="post-description" ng-bind="::post.description"></h3>
+		</a>
+		<div ng-show="isSinglePost">
+			<span class="tag label label-info" ng-repeat="tag in ::post.tags">
+				<a href="/tags/{{::tag}}" ng-bind="::tag"></a>
+				<span class="tag-frequency" ng-bind="::tags[tag]"></span>
+			</span>
+		</div>
+		<p class="post-meta">Posted by <a href="/author/{{::post.author}}" ng-bind="::post.author"></a></p>
+	</div>
+	<hr ng-hide="isSinglePost"/>
+</div>
+
+<div class="spinner-container" ng-hide="posts">
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+</div>

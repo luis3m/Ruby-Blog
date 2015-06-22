@@ -1,0 +1,39 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "2015 NBA Champions",
+            "tags": ["nba", "sports", "basketball"],
+            "description": "The Golden State Warriors defeated the Cleveland Cavaliers in 6 games",
+            "author": "Luis"
+        },
+        {
+            "id": "2",
+            "title": "Wimbledon Tournament",
+            "tags": ["tennis", "sports"],
+            "description": "The third Grand Slam is about to start and Novak Djokovic is the top seed",
+            "author": "Luis"
+        },
+        {
+            "id": "3",
+            "title": "Programming on Ruby",
+            "tags": ["software", "education", "ruby"],
+            "description": "Loving Ruby day by day",
+            "author": "Josue"
+        },
+        {
+            "id": "4",
+            "title": "Dependency Injection",
+            "tags": ["software", "education", ".net"],
+            "description": "Details about the Inversion of Control design. Examples with Unity/Ninject",
+            "author": "Luis"
+        },
+        {
+            "id": "5",
+            "title": "Duck Typing",
+            "tags": ["software", "education", "python", "ruby", "dynamic"],
+            "description": "If it looks like a duck and quacks like a duck, it's a duck",
+            "author": "Josue"
+        }
+    ]
+}
